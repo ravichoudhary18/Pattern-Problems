@@ -3,12 +3,16 @@ def StarPyramid(number):
     Star Pyramid
     """
     print('Star Pyramid')
-    for i in range(number+1):
-        for j in range(number):
-            print(" ", end= "")
+    space = number -1
+    for i in range(number):
         
-        for k in range(i):
-            print("* ", end= "")
-        print()
+        for j in range(space):
+            print(end=" ")
+
+        for j in range(i+1):
+            print("* ", end=" ")
+
+        space = space - 1
+        print('\r')
 
 StarPyramid(5)
